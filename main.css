@@ -1,6 +1,16 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image:url(greybg.png);
+    background-color: black; 
+    color: white; 
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
     }
+
+#topbar {
+    padding: 2em;
+}
+
+#navContent {
+    padding: 2em;
+}
