@@ -1,16 +1,36 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: black; 
+    background-color:#480a0a; 
     color: white; 
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     }
 
-#topbar {
+#topbar, #navContent {
+    padding: 2em;
+    background-color: #480a0a;
+    padding-bottom: 0;
+}
+
+.game1, .game2 {
     padding: 2em;
 }
 
-#navContent {
-    padding: 2em;
+question {
+    padding-bottom: 1em;
+}
+
+.questionText {
+    padding-bottom: 1em;
+}
+
+.feedback1, .feedback2 {
+    width: 60px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -10px;
 }

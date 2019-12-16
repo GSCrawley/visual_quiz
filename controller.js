@@ -10,22 +10,22 @@ var score=0;
 const data = {
 	"quizlist":[
     {
-    "question":"Which picture shows a lion?",
-    "option1":"static/img/lion.png",
-    "option2":"static/img/tiger.png",
-    "option3":"static/img/cheetah.png"
+	"question":"Which of these photos depicts a character played by David Bowie in a film?",
+    "option1":"static/labyrinthbowie.jpg",
+    "option2":"static/ladystardust.jpg",
+    "option3":"static/bowie_low.jpg"
     },
     {
-    "question":"Which picture shows a labrador?",
-    "option1":"static/img/labrador.png",
-    "option2":"static/img/beagle.png",
-    "option3":"static/img/poodle.png"
+    "question":"Who is oldest among Keith Richards, Mick Jagger, and Alice Cooper?",
+    "option1":"static/mickj.jpg",
+    "option2":"static/KeithRichards.jpg",
+    "option3":"static/AliceCooper.jpg"
     },
     {
-    "question":"Which picture shows a meerkat?",
-    "option1":"static/img/meerkat.png",
-    "option2":"static/img/chipmunk.png",
-    "option3":"static/img/squirrel.png"
+    "question":"Which of these artists are still alive?",
+    "option1":"static/Ozzy1.jpg",
+    "option2":"static/Morrisson.jpg",
+    "option3":"static/Jimi.jpg"
     }
 	]
 }
