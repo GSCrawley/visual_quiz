@@ -31,6 +31,18 @@ const data = {
 	"option1":"static/DebbieHarry.jpg",
 	"option2":"static/Madonna.jpeg",
 	"option3":"static/pink.jpg"
+	},
+	{
+	"question":"Which of these women sang for the band The Runaways?",
+	"option1":"static/JoanJett.jpg",
+	"option2":"static/stevie.jpg",
+	"option3":"static/Tori.jpg"
+	},
+	{
+	"question":"Which of these artists released the most studio albums throughout their career",
+	"option1":"static/prince.jpg",
+	"option2":"static/robert.jpg",
+	"option3":"static/90sbowie.jpg"
 	}
 	]
 };
