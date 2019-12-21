@@ -30,7 +30,7 @@ const data = {
 	"question":"Which of these frontwomen sang for the band Blondie?",
 	"option1":"static/DebbieHarry.jpg",
 	"option2":"static/Madonna.jpeg",
-	"option3":"static/pink.jpeg"
+	"option3":"static/pink.jpg"
 	}
 	]
 };
@@ -51,43 +51,48 @@ displayQuestion();
 // fillDB();
 
 function displayQuestion(){
-	var rnd=Math.random()*4;
+	var rnd=Math.random()*3;
 	rnd=Math.ceil(rnd);
-	var q1;
-	var q2;
-	var q3;
-	
+	var a1;
+	var a2;
+	var a3;
+	var correct;
 
-	if(rnd==1){q1=questionBank[questionNumber][1];q2=questionBank[questionNumber][3];q3=questionBank[questionNumber][2];}
-	if(rnd==2){q1=questionBank[questionNumber][2];q2=questionBank[questionNumber][1];q1=questionBank[questionNumber][3];}
-	if(rnd==3){q1=questionBank[questionNumber][3];q2=questionBank[questionNumber][2];q2=questionBank[questionNumber][1];}                                                                   
+	if(rnd==1){a1=questionBank[questionNumber][1];a2=questionBank[questionNumber][2];a3=questionBank[questionNumber][3];correct=1}
+	if(rnd==2){a1=questionBank[questionNumber][2];a2=questionBank[questionNumber][3];a3=questionBank[questionNumber][1];correct=3}
+	if(rnd==3){a1=questionBank[questionNumber][3];a2=questionBank[questionNumber][1];a3=questionBank[questionNumber][2];correct=2}                     
+
 
 	$(stage).append(`
 		<div class="questionText">${questionBank[questionNumber][0]}</div>
 		<div id="1" class="pix">
-			<img src="${q1}">
+			<img src="${a1}">
 		</div>
 		<div id="2" class="pix">
-			<img src="${q2}">
+			<img src="${a2}">
 		</div>
 		<div id="3" class="pix">
-			<img src="${q3}">
+			<img src="${a3}">
 		</div>
 		`);
 
  $('.pix').click(function(){
-  if(questionLock==false){questionLock=true;	
+	console.log(this.id)
+	console.log(rnd)
+  if(questionLock==false){questionLock=true};	
   //correct answer
-  if(this.id==rnd){
+  
+
+  if(this.id==correct){
    $(stage).append('<div class="feedback1">CORRECT</div>');
    score++;
    }
   //wrong answer	
-  if(this.id!=rnd){
+  if(this.id!=correct){
    $(stage).append('<div class="feedback2">WRONG</div>');
   }
   setTimeout(function(){changeQuestion();},1000);
- }});
+ });
 }//display question
 
 	
