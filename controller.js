@@ -60,8 +60,6 @@ numberOfQuestions=questionBank.length;
 	
 displayQuestion();
 
-// fillDB();
-
 function displayQuestion(){
 	var rnd=Math.random()*3;
 	rnd=Math.ceil(rnd);

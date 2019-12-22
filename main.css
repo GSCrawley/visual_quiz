@@ -17,12 +17,30 @@ html, body {
     padding: 2em;
 }
 
-question {
+.question {
     padding-bottom: 1em;
 }
 
 .questionText {
     padding-bottom: 1em;
+}
+
+.a1, .a2, .a3 {
+    grid-template-areas: "l m r"
+}
+.a1 {
+    grid-area: l; 
+    padding-right: 1em;
+}
+
+.a2 {
+    grid-area: m;
+    padding-right: 1em;
+}
+
+.a3 {
+    grid-area: r;
+    padding-right: 1em;
 }
 
 .feedback1, .feedback2 {
